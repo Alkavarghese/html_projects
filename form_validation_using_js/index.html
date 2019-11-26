@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="jquery-1.11.0.min.js"></script>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="column" >
+<img src="img1.jpg" alt="logo">
+<p id="f">Wecome to Castle Cafe! Are you a coffee lover?If yes,Enjoy your evening with a cup of coffee...Please don't forget to fill the feedback.Thankyou!</p>
+  </div>
+  <div class="column">
+    <h2>Settings</h2>
+<form class="" action="" method="post">
+  <label for="">Name:</label>
+  <input type="text" class="form-control"name="" value=""placeholder="Enter your name" size="25" id="name" onblur="myFun()">
+<p id="nam"></p>
+  <label for="">Email:</label>
+  <input type="text" class="form-control"name="" value="" placeholder="you@example.com"size="25" id="email" onblur="myFun1()">
+<p id="em"></p>
+  <label for="">Password:</label>
+  <input class="form-control" type="password" name="" value=""size="25"id="pass"  >
+
+<p id="ps"></p>
+  <label for="">Confirm password:</label>
+  <input class="form-control" type="password" name="" value=""size="25"id="cpass" >
+
+  <p id="cps"></p>
+</form>
+  </div>
+  <div class="column" style="">
+<h2>Profile</h2>
+<label for="">Date-of-birth:</label>
+<input type="date" class="form-control"name="" value=""size="25" id="date" onblur="myFun4()"><input id="check"type="checkbox">
+<p id=dt></p>
+<label for="">Short Bio(Max upto 140 characters):</label><br>
+<textarea class="form-control"name="name" rows="4" cols="15"size="25" id="txtarea"maxlength="140" ></textarea>
+<p id="ta"></p>
+<input type="submit" name="" value="REGISTER" href="#" onclick="check()">
+  </div>
+</div>
+<script>
+  var returnValue;
+  function myFun(){
+
+  				var name=document.getElementById("name").value;
+
+
+  				returnValue=true;
+  				if(name.trim()==""){
+  					document.getElementById("nam").innerHTML="* Name fieldis required.";
+  					returnValue=false;
+  				}
+else{
+  document.getElementById("nam").innerHTML="";
+}
+
+return returnValue;
+}
+function myFun1(){
+
+        var email=document.getElementById("email").value;
+
+  				returnValue=true;
+  				if(email.trim()==""){
+  					document.getElementById("em").innerHTML="* Please enter a valid email ID.";
+  					returnValue=false;
+  				}
+          if(email.includes("@",".")){
+            returnValue=true;
+
+              document.getElementById("em").innerHTML="";
+
+          }
+          else{document.getElementById("em").innerHTML="* Please enter a valid email ID.";
+          returnValue=false;}
+
+  				return returnValue;
+        }
+        $('form input[id ="pass"]').on('blur', function () {
+
+   var pswd = this.value;
+   if(pswd.trim()==""){
+     document.getElementById("ps").innerHTML="*make sure that your password has atleast 8 characters.";
+     returnValue=false;
+   }
+   if (pswd.length < 8) {
+       $("#pass").removeClass("is-valid");
+       $("#pass").addClass("is-invalid");
+   }
+   else {
+
+       $("#pass").removeClass("is-invalid");
+       $("#pass").addClass("is-valid");
+   }
+});
+        $('form input[id ="cpass"]').on('blur', function () {
+
+   var cpswd = this.value;
+   if(cpswd.trim()==""){
+     document.getElementById("cps").innerHTML="*Field is required.";
+     $("#cpass").removeClass("is-valid");
+     $("#cpass").addClass("is-invalid");
+
+   }
+   if (cpswd.length < 8 ){
+       $("#cpass").removeClass("is-valid");
+       $("#cpass").addClass("is-invalid");
+   }
+   var pswd=document.getElementById("pass").value;
+   if (pswd === cpswd) {
+
+       $("#cpass").removeClass("is-invalid");
+       $("#cpass").addClass("is-valid");
+   } else {
+       // console.log('Password Missmatch');
+       $("#cpass").removeClass("is-valid");
+       $("#cpass").addClass("is-invalid");
+   }
+});
+
+  function myFun4(){
+
+                var date=document.getElementById("date").value;
+
+        	returnValue=true;
+              if(date.trim()=="")
+              {
+                 $('#check').css('visibility', 'visible');
+          	document.getElementById("dt").innerHTML="*You need a parent's permission to register.Please tick here if you are intersted:";
+          	returnValue=false;
+            }
+            var dat=new Date(date);
+            var year=dat.getFullYear();
+            console.log(year);
+            var dt = new Date();
+            var yr=dt.getFullYear();
+            console.info(yr);
+            var diff=yr-year;
+            if(diff<=18){
+               $('#check').css('visibility', 'visible');
+
+              document.getElementById('dt').innerHTML="*You need a parent's permission to register.Please tick here if you are intersted:";
+            }
+            else {
+              document.getElementById('date').innerHTML="";
+            }
+
+          }
+
+function check(){
+
+    				var name=document.getElementById("name").value;
+
+
+    				returnValue=true;
+    				if(name.trim()==""){
+    					document.getElementById("nam").innerHTML="* Name fieldis required.";
+    					returnValue=false;
+    				}
+
+
+          var email=document.getElementById("email").value;
+
+    				returnValue=true;
+    				if(email.trim()==""){
+    					document.getElementById("em").innerHTML="* Please enter a valid email ID.";
+    					returnValue=false;
+    				}
+
+
+                    var pass=document.getElementById("pass").value;
+
+              				returnValue=true;
+              				if(pass.trim()==""){
+              					document.getElementById("ps").innerHTML="*make sure that your password has atleast 8 characters.";
+              					returnValue=false;
+              				}
+
+
+                              var cpass=document.getElementById("cpass").value;
+
+                        				returnValue=true;
+                        				if(cpass.trim()==""){
+                        					document.getElementById("cps").innerHTML="*Field is required.";
+                                  $("#cpass").removeClass("is-valid");
+                                  $("#cpass").addClass("is-invalid");
+                        					returnValue=false;
+                        				}
+
+
+
+        var date=document.getElementById("date").value;
+
+          	returnValue=true;
+                if(date.trim()=="")
+                {
+
+         $('#check').css('visibility', 'visible');
+            	document.getElementById("dt").innerHTML="*You need a parent's permission to register.Please tick here if you are intersted:";
+            	returnValue=false;
+              }
+
+
+}
+document.getElementById('txtarea').onkeyup = function () {
+  document.getElementById('ta').innerHTML =  (140 - this.value.length);
+};
+
+
+</script>
+</body>
+</html>

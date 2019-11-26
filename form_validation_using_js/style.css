@@ -1,0 +1,45 @@
+body{
+ background-color: grey;
+
+}
+#check{visibility: hidden;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 31%;
+  margin:auto;
+  height: 800px;
+  column-gap: 40px;
+    border-spacing: 40em;
+    padding:5px 0 10px 0px;
+    border-width: thick;
+    border-color: white;
+    background-color:#FF6347;
+    border-right: 5em;
+    margin: 0px 33px 5px 0px;
+}
+img{
+  width:45%;
+  height: 25%;
+  border-radius: 50%;
+  margin-left: 8em;
+  margin-top: 3em;
+}
+.row
+{  background-color: grey;
+margin-left: 13px;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#f{
+  color: white;
+  font-size: 28px;
+}
+p{
+  color: white;
+  font-size: 14px;
+}
