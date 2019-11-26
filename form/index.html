@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!--form-->
+    <form action="https://www.google.com/" target="_blank"  method="get">
+      <!--grouping form elements(name&email)-->
+      <fieldset>
+        <legend>Your Details</legend>
+        <label>Name:</label>
+        <input type="text" name="Your name" size="15" maxlength="30"/>
+        <br>
+        <label>Email:</label>
+        <input type="email" name="enter your mail id" size="15" maxlength="30"/>
+      </fieldset>
+      <!--end of grouping of name and email-->
+      <br>
+      <!--grouping form elements(review)-->
+      <fieldset>
+        <legend>Your Review</legend>
+        <label>How did you hear about us?</label>
+        <!--dropbox-->
+        <select name="methods">
+          <option value="Google">Google</option>
+          <option value="Whatsapp">Through Whatsapp</option>
+          <option value="Friend">Friends</option>
+        </select>
+        <!--end of the dropbox-->
+        <br>
+        <br>
+        <!--radio button-->
+        <label>Would you visit again?</label>
+        <br>
+        <input type="radio" name="visit" value="yes"/> Yes
+        <input type="radio" name="visit" value="no"/> No
+        <input type="radio" name="visit" value="maybe"/> Maybe
+        <br>
+        <!-- end of radio button-->
+        <p>Comments<br>
+          <!--text area-->
+        <textarea name="comments" rows="4" cols="20"></textarea></p>
+        <!--end of text area-->
+        <!--check box-->
+        <input type="checkbox" name="signup" value="signup" checked="checked"/>Sign me up for email updates
+        <!-- end of check box-->
+        <br>
+        <input type="submit" name="submit " value="Submit review"/>
+      </fieldset>
+      <!--grouping form elements(review)-->
+   </form>
+   <!--end of form-->
+ </body>
+</html>
