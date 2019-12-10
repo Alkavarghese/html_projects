@@ -1,0 +1,120 @@
+body {
+    color: #ffffff;
+    background: #413f3b url("bg.jpg");
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 100%;
+    margin: 0px;
+    text-align: center;
+  }
+a {
+    color:color: #b5c1ad;
+    text-decoration: none;
+  }
+a:hover {
+    color: #ffffff;
+        }
+.header {
+    background-image: url("bg-header.jpg");
+    padding: 0px 0px 0px 0px;
+    height: 100px;
+    /*position: fixed;*/
+    top: 0px;
+    width: 100%;
+    z-index: 50;
+  }
+.nav1 {
+    float: right;
+    font-family: 'QuicksandBook', Helvetica, Arial, sans-serif;
+    padding: 45px 0px 0px 0px;
+    text-align: right;
+    margin-top: -7em;
+  padding-right: 1em;
+}
+.logo {
+				margin-bottom: 20px;
+      }
+.main{
+    width: 960px;
+    margin: -140px auto;
+    background-image: url(bg-triangle.png);
+    background-repeat: no-repeat;
+    background-position: 0px -99px;
+    text-align: left;
+  /* margin-bottom: -42px; */
+       }
+.gd{
+padding-right: 35em;
+}
+.gp{
+  margin-left: 31em;
+  /* margin-top: 9em; */
+  margin-bottom: 3em;
+}
+h1, h2 {
+				font-family: 'QuicksandBook', Helvetica, Arial, sans-serif;
+				font-weight: normal;
+				text-transform: uppercase;}
+h1 {
+				font-size: 240%;
+				margin-top: 140px;}
+.date {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 75%;
+				color: #b5c1ad;}
+.intro {
+        clear: left;
+    font-size: 83%;
+    line-height: 1.5em;
+    margin-left: 53em;
+    width: 26%;
+    color: white;}
+.main-story {
+  background-image: url(triangles.png);
+background-repeat: no-repeat;
+background-position: 122px 43px;
+height: 486px;
+            }
+.more-articles {
+    				border-top: 1px solid #ffffff;
+    				padding: 10px;
+              }
+.more-articles p {
+    				border-bottom: 1px solid #807c72;
+    				padding: 5px 0px 15px 0px;
+    				font-size: 80%;
+          }
+.more-articles p:last-child
+          {
+    				border-bottom: none;
+          }
+a{
+  color: white;
+  text-decoration: none;
+}
+.g1,.g2,.g3,.g4{
+  width:25%;
+}
+.g2{
+  margin-left: 15em;
+margin-top: -335px;
+}
+.g3{
+  margin-left: 30em;
+margin-top: -335px;
+}
+.g4{
+  margin-left: 45em;
+margin-top: -319px;
+}
+.fr {
+    clear: both;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    margin-top: 7em;
+}
+.fr p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 75%;
+    text-align: right;
+    padding-right: 22em;
+}
