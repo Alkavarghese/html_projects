@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<!--Styling the <fieldset> and submit button-->
+
+  <style >
+    .container {
+    border-radius: 2px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border:none;
+    }
+
+    input[type=submit]
+    {
+    background-color:#4CAF50;
+    border:none;
+    color:white;
+    padding:16px 32 px
+
+    }
+  </style>
+  <!--end of style-->
+  <body>
+   <center>
+     <div >
+       <!--start of form-->
+       <form>
+         <fieldset class="container">
+          <h1>Registration Form</h1>
+          <div>
+           <label>First Name:</label>
+           <input type="text" size="30"maxlength="30"/>
+          </div>
+          <br><br>
+          <div>
+           <label>Last Name:</label>
+           <input type="text" size="30"maxlength="30"/>
+          </div>
+          <br><br>
+          <div>
+           <label>User Name:</label>
+           <input type="text" size="30"maxlength="30"/>
+          </div>
+          <br><br>
+          <div>
+           <label>   Password  :</label>
+           <input type="password" size="30"maxlength="30"/>
+          </div>
+          <br><br>
+          <div>
+           <label>  Email  :</label>
+           <input type="email" size="30" required="required"/>
+          </div>
+          <br><br>
+          <div>
+            <label>Mobile No:</label>
+            <input type="text" size="30"maxlength="10"/>
+          </div>
+          <br><br>
+          <label>city:</label>
+          <!--multiple select-->
+          <select name="city">
+           <option value="select">select</option>
+           <option value="mumbai">Mumbai</option>
+           <option value="chennai">Chennai</option>
+           <option value="Kochi">Kochi</option>
+          </select>
+          <!--end of multiple select box-->
+          <br><br>
+          <!--submit and back to home -->
+          <input type="submit" name="register" value=" Register " />
+          <a href="https://www.google.com/" target="_blank">Back To Home </a>
+          <!--end of submit and back to home-->
+       </fieldset>
+      </form>
+      <!--end of form-->
+    </div>
+  </center>
+ </body>
+</html>
