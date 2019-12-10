@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>first project</title>
+            <link rel="stylesheet" type="text/css" href="css/firstprojectcss.CSS">
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+            <script>
+            function validate()
+            {
+                          var unames=["admin","agent","user","client"];
+                          var passwords=["Admin*123","Agent*123","User*123","Client*123"];
+                          uname=document.getElementById("un").value;
+                          pass=document.getElementById("pass").value;
+                          var flag=0;
+                          for(var i=0;i<4;i++)
+                          {
+                            //if((uname.localeCompare(unames[i]))&&(passwords[i].localeCompare(pass)))
+                                    if((uname==unames[i])&&(passwords[i]==pass))
+                                    {
+                                        flag=1;
+                            //alert('login suuccesfull');
+                                    }
+
+
+                            }
+                            if(flag==1)
+                            {
+                                    alert('login suuccessfull');
+
+                            }
+                            else
+                                    alert('login failed');
+
+            }
+            </script>
+
+      </head>
+      <body>
+        <div class="main">
+            <form>
+                <div class="sign"><h1>Sign in</h1></div>
+                <input id="un" type="text" placeholder="User name" name="username" required>
+                 <br>
+                 <input id="pass" type="password" placeholder="Password" name="psw" required>
+                 <button id="submit" type="submit" class="btn" onclick="validate()">Login</button><br>
+
+                 <a class="abcd" href="">Forgot password?</a>
+
+
+      </body>
+</html>
