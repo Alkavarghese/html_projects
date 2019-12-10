@@ -1,0 +1,13 @@
+li:hover{
+  text-decoration: line-through;
+}
+::placeholder{
+  color:black;
+}
+.dv{
+  height:50%;
+  margin-left: 15em;
+}
+input{
+  border:none;
+}

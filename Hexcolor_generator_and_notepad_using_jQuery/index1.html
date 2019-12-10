@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>notepad</title>
+  <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script >
+      $(document).ready(function(){
+                 $("#text").dblclick(function(){
+                     var s=$("#text").val();
+
+                     $("#deslist").append("<li>"+s+"</li>");
+                     $("#text").val("");
+                     $("li").dblclick(function()
+                         {
+                     $(this).hide();
+                         });
+
+                       });
+
+                 });
+    </script>
+
+  </head>
+
+  <body>
+    <div class="dv">
+    <input type="text"  name="txt" value="" id="text" placeholder="What needs to be done?" >
+
+  <div  class="vd"id="text">
+
+    <ul id="deslist">
+      </ul>
+  </div></div>
+  </body>
+
+</html>

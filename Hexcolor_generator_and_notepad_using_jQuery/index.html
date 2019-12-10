@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>hexcolor</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <center><h1 >Build a Hex color Generator</h1>
+
+  <div class="dv" style="width:400px;height:500px;background-color:#f00000">
+
+  </div>
+  <br>
+  <button onclick="setRandomColor()">demo</button></center>
+  </body>
+  <script>
+  function getRandomColor() {
+
+var c ='#'+Math.floor(Math.random()*16777215).toString(16).slice(-6);
+
+return c;
+}
+
+
+
+function setRandomColor() {
+$('.dv').css("background-color", getRandomColor());
+}
+    </script>
+    </html>
