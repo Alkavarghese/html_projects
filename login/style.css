@@ -1,0 +1,78 @@
+/*style for the body*/
+body{
+    background-image:url("img.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    }
+    /*end of the style for body*/
+    /*style for division class main*/
+.main{
+  background-color:white;
+  width:30%;
+  height:75%;
+  margin:10% auto;
+  border-radius:20%;
+  box-shadow:0px 11px 35px 2px;
+  box-shadow:10%;
+  }
+  /*end of class main*/
+  /*header class sign*/
+.sign
+  {
+  margin-left:30%;
+  padding-top:10%;
+  color:#8C55AA;
+  font-family:'ubuntu' sans-serif;
+  font-weight:bold;
+}
+/*end of header class*/
+/*un class in form*/
+.un{
+  letter-spacing:1px;
+  font-family:'ubuntu' sans-serif;
+  margin-left:20%;
+  color:rgb(35,50,56);
+  font-weight:700;
+  font-size:10px;
+  background:rgba(136,126,126,0.14);
+  padding:10px 20px;
+  border-radius:20px;
+  outline:none;
+  box-sizing:border-box;
+  border:2px solid rgba(0,0,0,0.02);
+  text-align:center;
+
+  }
+/*end of un class*/
+/*submit class*/
+.submit{
+    cursor:pointer;
+    color:#fff;
+    width:20%;
+    height:10%;
+    background-color:darkorchid;
+    font-family:'ubuntu' sans-serif;
+    background:linear-gradient(to right,#9C27B0,#BF82C4  );
+    border:0;
+    outline:none;
+    font-size:10px;
+    margin-left:35%;
+    padding:5px;
+    outline:none;
+    box-sizing:border-box;
+    border-radius:10px;
+}
+.submit:hover{
+
+  background-image:none !important;
+  background-color:silver;
+}
+/*end of submit class*/
+/*anchor tag*/
+a{
+  text-shadow:0px 0px 3px;
+  color:black;
+  text-decoration:none;
+  margin-left:32%;
+}
+/*end of the anchor tag*/

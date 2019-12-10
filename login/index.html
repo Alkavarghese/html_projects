@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Sign in</title>
+    <!--linking css file-->
+    <link href="style.css" rel="stylesheet"  >
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <!--end of linking css-->
+    <script>
+    function validate()
+    {
+                  var unames=["alka","ans","tinu","admin"];
+                  var passwords=["alka","ans","tinu","admin"];
+                  uname=document.getElementById("un").value;
+                  pass=document.getElementById("pass").value;
+                  var flag=0;
+                  for(var i=0;i<4;i++)
+                  {
+
+                            if((uname==unames[i])&&(passwords[i]==pass))
+                            {
+                                flag=1;
+
+                            }
+
+
+                    }
+                    if(flag==1)
+                    {
+                            alert('login successfull');
+
+                    }
+                    else
+                            alert('Invalid username or password. Please try again!');
+
+    }
+    </script>
+  </head>
+  <body>
+    <!--start of form-->
+    <div class="main"><form>
+      <h2 class="sign">Sign in</h2>
+      <input type="text" id="un" class="un" name="usertext" placeholder="Username" required="required"/>
+      <br><br>
+      <input type="password" id="pass" class="un" name="userpass" placeholder="Password" required="required"/>
+      <br><br>
+      <input type="submit" class="submit" name="btnSubmit" value="Submit" onclick="validate()"/><br><br>
+      <a href="#" >Forgot password?</a></form>
+    </div>
+    <!--end of form-->
+  </body>
+
+</html>
