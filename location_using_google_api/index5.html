@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<input id="demo" type="text">
+<button type="button" onclick="myFun()">onclick</button>
+<p id="message"></p>
+
+<script>
+function myFun() {
+  var msg, x;
+  msg = document.getElementById("message");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+  try {
+    if(x == "")  throw "is Empty";
+    if(isNaN(x)) throw "not a number";
+
+
+  }
+  catch(err) {
+    message.innerHTML = "Input " + err;
+  }
+  finally {
+console.log(x);
+  }
+}
+</script>
+
+</body>
+</html>
