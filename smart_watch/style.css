@@ -1,0 +1,97 @@
+.main{
+background-image: url("img.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+  width: 500px;
+  height: 568px;
+  margin-left: 26em;
+  position: absolute;
+  margin-top: 5em;
+}
+#head{
+  position: absolute;
+margin-left: 15em;
+margin-top: 14em;
+}
+
+#img{
+  position: absolute;
+margin-left: 20em;
+margin-top: 12em;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+#navv li {
+  float: left;
+  border-radius: 50%;
+}
+
+#navv li a {
+  display: block;
+  color: white;
+  text-align: center;
+      padding: 4px 10px;
+  text-decoration: none;
+    border-radius: 50%;
+}
+
+#navv li a:hover:not(.active) {
+  background-color:lightblue;
+    border-radius: 50%;
+}
+.active{
+  background-color:lightblue;
+    border-radius: 50%;
+}
+
+nav{
+  margin-top: 28em;
+    position: absolute;
+    margin-left: 15em;
+}
+.img1 {
+    position: absolute;
+    margin-left: 22em;
+    margin-top: 13em;
+}
+#msg {
+    margin-left: 15em;
+    margin-top: 14em;
+    position: absolute;
+}
+#msg li a {
+  display: block;
+  color: black;
+  text-align: center;
+
+  text-decoration: none;
+
+}
+.glyphicon {
+  color:Goldenrod;
+}
+.audio{
+  margin-left: 14em;
+  margin-top: 23em;
+}
+span{
+  padding-right: 3em;
+}
+.timer{
+  margin-left: 14em;
+      margin-top: 19em;
+  }
+#s,#t,#u,#v,#w{
+  visibility: hidden;
+}
+audio {
+    width: 17%;
+    margin-left: 40em;
+    margin-top: 22em;
+}
